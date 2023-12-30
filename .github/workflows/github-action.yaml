@@ -34,7 +34,3 @@ jobs:
         source_dir: src
         event_trigger_type: providers/cloud.pubsub/eventTypes/topic.publish
         event_trigger_resource: projects/${{ secrets.GCP_PROJECT }}/topics/cloud-function-topic
-
-    # Example of using the output
-    - id: 'test'
-      run: 'curl "${{ steps.deploy.outputs.url }}"'
